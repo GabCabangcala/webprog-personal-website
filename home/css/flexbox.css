@@ -1,0 +1,189 @@
+@font-face {
+    font-family: MyFont1;
+    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+}
+
+body {
+    background-color: #394A56;
+    color: #E7E8E7;
+    font-family: MyFont1;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: MyFont1;
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+h4, h5 {
+    color: #8FBFDA;
+    font-family: MyFont1;
+    margin: 10px 0;
+    text-align: left;
+    font-size: 30px;
+}
+
+a {
+    color: #2c6485;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+a[href="mailto:gjcabangcala@student.apc.edu.ph"] {
+    color: #EEEEEE;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin: 20px 10%;
+}
+
+img {
+    border-radius: 15%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.text-content {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 10px;
+    background-color: #2C6485;
+    border: 2px solid #FFD700;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+th {
+    background-color: #22303F;
+    color: #FFD700;
+    font-size: 22px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #8FBFDA;
+    color: #394A56;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+td:hover {
+    transform: scale(1.05);
+    background-color: #FFD700;
+    color: #22303F;
+}
+
+tr {
+    height: 60px;
+}
+
+caption {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #FFD700;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #2C6485;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.gallery {
+    background-color: #22303F;
+    padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.gallery-row img {
+    height: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery h4 {
+    color: #FFD700;
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 22px;
+    color: #8FBFDA;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    font-size: 25px;
+    text-align: justify;
+}
+
+.gallery h4 {
+    text-align: center;
+}
+
+/* Flex Container Styles */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.flex-container > div {
+    background-color: #2C6485;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    flex: 1 1 calc(33.33% - 20px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.flex-container > div:hover {
+    transform: scale(1.05);
+    background-color: #8FBFDA;
+    color: #22303F;
+}
