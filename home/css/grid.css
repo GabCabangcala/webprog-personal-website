@@ -1,18 +1,20 @@
+/* Font Setup */
 @font-face {
     font-family: MyFont1;
     src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 }
 
+/* General Styles */
 body {
     background-color: #394A56;
     color: #E7E8E7;
-    font-family: MyFont1;
+    font-family: MyFont1, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    font-family: MyFont1;
+    font-family: MyFont1, sans-serif;
     text-align: center;
     font-size: 40px;
     margin: 20px 0;
@@ -20,16 +22,21 @@ h1 {
 
 h4, h5 {
     color: #8FBFDA;
-    font-family: MyFont1;
+    font-family: MyFont1, sans-serif;
     margin: 10px 0;
-    text-align: left;
     font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+    text-align: justify;
+    margin: 10px 0;
 }
 
 a {
     color: #2c6485;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 a[href="mailto:gjcabangcala@student.apc.edu.ph"] {
@@ -40,12 +47,45 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Layout Styles */
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header header header header"
+        "menu main main main right right"
+        "menu footer footer footer footer footer";
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+/* Container */
 .container {
     display: flex;
     align-items: center;
     margin: 20px 10%;
 }
 
+.text-content {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Images */
 img {
     border-radius: 15%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -56,11 +96,7 @@ img:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.text-content {
-    margin-left: 20px;
-    font-size: 18px;
-}
-
+/* Table Styles */
 table {
     width: 80%;
     margin: 20px auto;
@@ -98,35 +134,15 @@ td:hover {
     color: #22303F;
 }
 
-tr {
-    height: 60px;
-}
-
-caption {
-    margin-bottom: 10px;
-    font-size: 24px;
-    color: #FFD700;
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-td {
-    background-color: #2C6485;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    border-radius: 8px;
-    font-size: 18px;
-}
-
+/* Gallery Styles */
 .gallery {
     background-color: #22303F;
-    padding: 10px;
-    margin: 10px auto;
+    padding: 20px;
+    margin: 20px auto;
     width: 80%;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
 .gallery-row {
@@ -142,33 +158,17 @@ td {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.gallery h4 {
-    color: #FFD700;
-    font-size: 28px;
+.gallery-row img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-h5 {
-    font-size: 22px;
-    color: #8FBFDA;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-p {
-    font-size: 25px;
-    text-align: justify;
-}
-
-.gallery h4 {
-    text-align: center;
-}
-
-/* Flex Container Styles */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    margin: 20px 0;
 }
 
 .flex-container > div {
@@ -186,27 +186,4 @@ p {
     transform: scale(1.05);
     background-color: #FFD700;
     color: #22303F;
-}
-
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
-
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'main main main main main'
-    'menu footer footer footer footer footer';
-  gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
-}
-
-.grid-container > div {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
 }
