@@ -1,189 +1,123 @@
-/* Font Setup */
-@font-face {
-    font-family: MyFont1;
-    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <title>About Me</title>
+</head>
+<body>
+    <header>
+        <h1>BIENVENIDO A MI SITIO WEB</h1>
+    </header>
+    <main>
+        <div class="container">
+            <img src="https://tinyurl.com/3tvaehwf" alt="ME">
+            <div class="text-content">
+              <h4>Name</h4>
+              <p><a href="mailto:gjcabangcala@student.apc.edu.ph">Gabrielle Cabangcala</a></p>
 
-/* General Styles */
-body {
-    background-color: #394A56;
-    color: #E7E8E7;
-    font-family: MyFont1, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+              <h4>Course </h4>
+              <p>Bachelor of Science in Computer Science Specialized in Cyber Security and Forensics</p>
+                <h4>About Me</h4>
+                <p>
+                    Hi Everyone! I'm Gab! I love cooking, playing golf, watching movies/kdramas, playing guitar.  
+                    I am also a family-oriented person. I value my time with my family a lot.
+                </p>
+                <h4>Education</h4>
+                <p>
+                    I studied at <a href="https://cavite.lpu.edu.ph">Lyceum of The Philippines University, Cavite</a>,  
+                    and Victorious Christian Montessori, Bacoor for my Senior High School, and currently studying at  
+                    <a href="https://www.apc.edu.ph">Asia Pacific College.</a>
+                </p>
+            </div>
+        </div>
 
-h1 {
-    font-family: MyFont1, sans-serif;
-    text-align: center;
-    font-size: 40px;
-    margin: 20px 0;
-}
+        <section class="info">
+            <table>
+                <tr>
+                    <th>IT Experience</th>
+                    <th>Hobbies & Interest</th>
+                    <th>Goals In Life/Dream</th>
+                </tr>
+                <tr>
+                    <td>Research and Development of "A Data-Driven Approach to Philippine Power Grid Efficiency"</td>
+                    <td>Golf</td>
+                    <td>Move or work to Switzerland</td>
+                </tr>
+                <tr>
+                    <td>Prototyping for "Rams Pawtner" using Figma</td>
+                    <td>Go to the Gym</td>
+                    <td>Retire my Parents</td>
+                </tr>
+                <tr>
+                    <td>FGD participant & critique for a Thesis called "Aninaw"</td>
+                    <td>Cook Food</td>
+                    <td>Buy my Dad's dream Hilux/Ranger</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Play Guitar</td>
+                    <td>Have a Stable Job</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Try different food</td>
+                    <td>Learn to Skydive</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Travel</td>
+                    <td>Travel to Japan and Korea</td>
+                </tr>
+            </table>
+        </section>
 
-h4, h5 {
-    color: #8FBFDA;
-    font-family: MyFont1, sans-serif;
-    margin: 10px 0;
-    font-size: 30px;
-}
+        <section class="gallery">
+            <h4>Picture Gallery</h4>
+            <div class="flex-container">
+                <div>
+                    <h5>KODAK FILMS</h5>
+                    <div class="gallery-row">
+                        <img src="https://tinyurl.com/3zk8kee7" alt="Kodak 1">
+                        <img src="https://tinyurl.com/56k7eff6" alt="Kodak 2">
+                        <img src="https://tinyurl.com/ycyrhu8v" alt="Kodak 3">
+                    </div>
+                </div>
+                <div>
+                    <h5>ZAMBOANGA TRIP</h5>
+                    <div class="gallery-row">
+                        <img src="https://tinyurl.com/786zzztx" alt="Trip 1">
+                        <img src="https://tinyurl.com/yfsxtnka" alt="Trip 2">
+                        <img src="https://tinyurl.com/5f4atkdz" alt="Trip 3">
+                    </div>
+                </div>
+                <div>
+                    <h5>MY CAT</h5>
+                    <div class="gallery-row">
+                        <img src="https://tinyurl.com/4rfhbsap" alt="Cat 1">
+                        <img src="https://tinyurl.com/2ajefx4f" alt="Cat 2">
+                        <img src="https://tinyurl.com/35karera" alt="Cat 3">
+                    </div>
+                </div>
+                <div>
+                    <h5>ME AND MY GIRLFWEN</h5>
+                    <div class="gallery-row">
+                        <img src="https://tinyurl.com/mfx3uebv" alt="Couple 1">
+                        <img src="https://tinyurl.com/raej3eyy" alt="Couple 2">
+                        <img src="https://tinyurl.com/2s4exhmy" alt="Couple 3">
+                    </div>
+                </div>
+            </div>
+          <div class="grid-container">
+  <div class="item1">Header</div>
+  <div class="item2">Menu</div>
+  <div class="item3">Main</div>  
+  <div class="item4">Right</div>
+  <div class="item5">Footer</div>
+</div>
+        </section>
+    </main>
+</body>
+</html>
 
-p {
-    font-size: 20px;
-    text-align: justify;
-    margin: 10px 0;
-}
-
-a {
-    color: #2c6485;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-a[href="mailto:gjcabangcala@student.apc.edu.ph"] {
-    color: #EEEEEE;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Layout Styles */
-.grid-container {
-    display: grid;
-    grid-template-areas:
-        "header header header header header header"
-        "menu main main main right right"
-        "menu footer footer footer footer footer";
-    gap: 10px;
-    padding: 10px;
-}
-
-.grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px;
-    font-size: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
-
-/* Container */
-.container {
-    display: flex;
-    align-items: center;
-    margin: 20px 10%;
-}
-
-.text-content {
-    margin-left: 20px;
-    font-size: 18px;
-}
-
-/* Images */
-img {
-    border-radius: 15%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Table Styles */
-table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: separate;
-    border-spacing: 10px;
-    background-color: #2C6485;
-    border: 2px solid #FFD700;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-th {
-    background-color: #22303F;
-    color: #FFD700;
-    font-size: 22px;
-    padding: 15px;
-    text-align: center;
-    border-radius: 10px;
-    text-transform: uppercase;
-}
-
-td {
-    background-color: #8FBFDA;
-    color: #394A56;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
-    font-size: 20px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-td:hover {
-    transform: scale(1.05);
-    background-color: #FFD700;
-    color: #22303F;
-}
-
-/* Gallery Styles */
-.gallery {
-    background-color: #22303F;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-}
-
-.gallery-row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-.gallery-row img {
-    height: 250px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-row img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.flex-container > div {
-    background-color: #2C6485;
-    border: 2px solid #FFD700;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    flex: 1 1 calc(33.33% - 20px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.flex-container > div:hover {
-    transform: scale(1.05);
-    background-color: #FFD700;
-    color: #22303F;
-}
