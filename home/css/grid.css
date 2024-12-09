@@ -1,10 +1,8 @@
-/* Font Setup */
 @font-face {
     font-family: MyFont1;
     src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 }
 
-/* General Styles */
 body {
     background-color: #394A56;
     color: #E7E8E7;
@@ -47,13 +45,12 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Layout Styles */
 .grid-container {
     display: grid;
     grid-template-areas:
-        "header header header header header header"
-        "menu main main main right right"
-        "menu footer footer footer footer footer";
+        "item1 item1 item1 item1 item1 item1"
+        "item3 item3 item3 item4 item4 item4"
+        "item5 item5 item5 item5 item5 item5";
     gap: 10px;
     padding: 10px;
 }
@@ -67,13 +64,22 @@ a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
+.item1 {
+    grid-area: item1;
+}
 
-/* Container */
+.item3 {
+    grid-area: item3;
+}
+
+.item4 {
+    grid-area: item4;
+}
+
+.item5 {
+    grid-area: item5;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -85,7 +91,6 @@ a:hover {
     font-size: 18px;
 }
 
-/* Images */
 img {
     border-radius: 15%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -96,7 +101,6 @@ img:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Table Styles */
 table {
     width: 80%;
     margin: 20px auto;
@@ -134,7 +138,6 @@ td:hover {
     color: #22303F;
 }
 
-/* Gallery Styles */
 .gallery {
     background-color: #22303F;
     padding: 20px;
@@ -163,27 +166,29 @@ td:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin: 20px 0;
-}
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-areas:
+            "item1"
+            "item3"
+            "item4"
+            "item5";
+        grid-template-columns: 1fr;
+    }
 
-.flex-container > div {
-    background-color: #2C6485;
-    border: 2px solid #FFD700;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    flex: 1 1 calc(33.33% - 20px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, background-color 0.3s ease;
-}
+    .item3, .item4, .item5 {
+        width: 100%;
+    }
 
-.flex-container > div:hover {
-    transform: scale(1.05);
-    background-color: #FFD700;
-    color: #22303F;
+    img {
+        height: 200px;
+    }
+
+    .gallery-row img {
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
 }
