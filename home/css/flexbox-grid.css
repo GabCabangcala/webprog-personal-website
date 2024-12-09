@@ -1,0 +1,160 @@
+@font-face {
+    font-family: MyFont1;
+    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+}
+
+body {
+    background-color: #394A56;
+    color: #E7E8E7;
+    font-family: MyFont1, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: MyFont1, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+h4, h5 {
+    color: #8FBFDA;
+    font-family: MyFont1, sans-serif;
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+    text-align: left;
+    margin: 10px 0;
+}
+
+a {
+    color: #2c6485;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a[href="mailto:gjcabangcala@student.apc.edu.ph"] {
+    color: #EEEEEE;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header header header header"
+        "menu main main main right right"
+        "footer footer footer footer footer footer";
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: #22303F;
+    color: #E7E8E7;
+    text-align: left;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.item1 {
+    grid-area: header;
+    text-align: center;
+}
+
+.item2 {
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item3 {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item4 {
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item5 {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    color: #8FBFDA;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 10%;
+}
+
+.text-content {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+img {
+    border-radius: 15%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "menu"
+            "main"
+            "right"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    img {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
