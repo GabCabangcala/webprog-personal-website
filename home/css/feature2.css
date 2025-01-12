@@ -91,10 +91,3 @@ h1 {
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
-
-.gallery1 .gallery-row img,
-.gallery2 .gallery-row img,
-.gallery3 .gallery-row img {
-    max-width: 30%;
-    height: auto; 
-}
