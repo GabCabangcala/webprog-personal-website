@@ -87,7 +87,14 @@ h1 {
 }
 
 .gallery-row img {
-    max-width: 30%;
+    width: 30%;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-row img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
