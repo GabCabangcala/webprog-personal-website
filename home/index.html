@@ -1,113 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My personal website</title>
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="feature2.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Gab.</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about">About Me</a>
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#hobbies">Hobbies & Interest</a>
+                        <a class="nav-link" href="#hobbies">Hobbies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#goals">Goals In Life/Dream</a>
+                        <a class="nav-link" href="#goals">Goals</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container mt-5">
-        <section id="about" class="info-section">
-            <h2>About Me</h2>
-            <div class="card mb-3">
-                <div class="card-body">
-                    <p>Hello! I'm Gab, a Sophomore at Asia Pacific College</p>
-                </div>
+<!-- Hero Section with Carousel -->
+<div id="home" class="hero-section">
+    <!-- Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/carousel1.jpg" class="d-block w-100" alt="Image 1">
             </div>
-        </section>
-
-        <section id="experience" class="info-section">
-            <h2>Experience</h2>
-            <div class="card mb-3">
-                <div class="card-header">
-                    IT Experience <button class="btn btn-link" onclick="toggleCollapse(this)">Toggle</button>
-                </div>
-                <div class="collapsible-content card-body">
-                    <p><img src="path/to/canva-logo.png" alt="Canva Logo" class="logo"> Canva</p>
-                    <p><img src="path/to/microsoft-logo.png" alt="Microsoft Logo" class="logo"> Microsoft apps</p>
-                    <p><img src="path/to/python-logo.png" alt="Python Logo" class="logo"> Python</p>
-                    <p><img src="path/to/java-logo.png" alt="Java Logo" class="logo"> Java</p>
-                    <p><img src="path/to/html-logo.png" alt="HTML Logo" class="logo"> HTML</p>
-                    <p><img src="path/to/css-logo.png" alt="CSS Logo" class="logo"> CSS</p>
-                    <p><img src="path/to/javascript-logo.png" alt="JavaScript Logo" class="logo"> JavaScript</p>
-                    <p><img src="path/to/chatgpt-logo.png" alt="ChatGPT Logo" class="logo"> ChatGPT</p>
-                </div>
+            <div class="carousel-item">
+                <img src="Images/carousel2.jpg" class="d-block w-100" alt="Image 2">
             </div>
-        </section>
-
-        <section id="hobbies" class="info-section">
-            <h2>Hobbies & Interest</h2>
-            <div class="card mb-3">
-                <div class="card-header">
-                    Hobbies & Interest <button class="btn btn-link" onclick="toggleCollapse(this)">Toggle</button>
-                </div>
-                <div class="collapsible-content card-body">
-                    <p>Cook Food</p>
-                    <p>Play Guitar</p>
-                    <p>Try different food</p>
-                    <p>Travel</p>
-                </div>
+            <div class="carousel-item">
+                <img src="Images/carousel3.jpg" class="d-block w-100" alt="Image 3">
             </div>
-        </section>
-
-        <section id="goals" class="info-section">
-            <h2>Goals In Life/Dream</h2>
-            <div class="card mb-3">
-                <div class="card-header">
-                    Goals In Life/Dream <button class="btn btn-link" onclick="toggleCollapse(this)">Toggle</button>
-                </div>
-                <div class="collapsible-content card-body">
-                    <p>Buy my Dad's dream Hilux/Ranger</p>
-                    <p>Have a Stable Job</p>
-                    <p>Learn to Skydive</p>
-                    <p>Travel to Japan and Korea</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="gallery" class="info-section">
-            <h2>Photo Gallery</h2>
-            <div id="app2">
-                <photo-gallery></photo-gallery>
-            </div>
-        </section>
+        </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-    <script src="function.js"></script>
-    <script src="vue.js"></script>
+    <!-- Hero Content -->
+    <div class="hero-content">
+        <h1 class="hero-title">Gab's Website</h1>
+        <p class="hero-subtitle">My personal portfolio for WEBPROG subject.</p>
+        <a href="#projects" class="btn btn-primary btn-lg mt-4">About me</a>
+    </div>
+    <div class="hero-overlay"></div>
+</div>
+
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p>Hello! I'm Gab, a sophomore at Asia Pacific College.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <ul>
+                <li>Canva</li>
+                <li>Microsoft Apps</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>ChatGPT</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="section">
+        <div class="container">
+            <h2 class="section-title">Hobbies & Interests</h2>
+            <ul>
+                <li>Cooking Food</li>
+                <li>Playing Guitar</li>
+                <li>Trying Different Foods</li>
+                <li>Traveling</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section id="goals" class="section">
+        <div class="container">
+            <h2 class="section-title">Goals In Life/Dreams</h2>
+            <ul>
+                <li>Buy my dad's dream Hilux/Ranger</li>
+                <li>Have a stable job</li>
+                <li>Learn to skydive</li>
+                <li>Travel to Japan and Korea</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">Photo Gallery</h2>
+            <div class="gallery-row">
+                <img src="Images/kodak1.jpg" alt="Gallery Image 1">
+                <img src="Images/kodak2.jpg" alt="Gallery Image 2">
+                <img src="Images/kodak3.jpg" alt="Gallery Image 3">
+                <img src="Images/me1.jpg" alt="Gallery Image 4">
+                <img src="Images/me2.jpg" alt="Gallery Image 5">
+                <img src="Images/me3.jpg" alt="Gallery Image 6">
+                <img src="Images/gf1.jpg" alt="Gallery Image 7">
+                <img src="Images/gf2.jpg" alt="Gallery Image 8">
+                <img src="Images/gf3.jpg" alt="Gallery Image 9">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <p>Feel free to reach out for collaboration or inquiries! <br>(probably wouldn't respond though haha)</p>
+            <div class="d-flex justify-content-center">
+                <a href="mailto:gjcabangcala@student.apc.edu.ph" class="btn btn-outline-primary me-3">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+                <a href="https://www.linkedin.com/in/gabrielle-cabangcala-5a101b290/" class="btn btn-outline-info me-3" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/gaboy" class="btn btn-outline-light" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
