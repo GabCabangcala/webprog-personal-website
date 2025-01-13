@@ -3,100 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/feature2.css">
-    <title>About Me</title>
+    <title>My Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="feature2.css">
 </head>
 <body>
-    <header>
-        <h1>BIENVENIDO A MI SITIO WEB</h1>
-    </header>
-    <main>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <img src="Images/profile.jpg" alt="ME">
-            <div class="text-content">
-              <h4>Name</h4>
-              <p><a href="mailto:gjcabangcala@student.apc.edu.ph">Gabrielle Cabangcala</a></p>
-              <h4>Course</h4>
-              <p>Bachelor of Science in Computer Science Specialized in Cyber Security and Forensics</p>
-              <h4>About Me</h4>
-              <p>
-                  Hi Everyone! I'm Gab! I love cooking, playing golf, watching movies/kdramas, playing guitar.  
-                  I am also a family-oriented person. I value my time with my family a lot.
-              </p>
-              <h4>Education</h4>
-              <p>
-                  I studied at <a href="https://cavite.lpu.edu.ph">Lyceum of The Philippines University, Cavite</a>,  
-                  and Victorious Christian Montessori, Bacoor for my Senior High School, and currently studying at  
-                  <a href="https://www.apc.edu.ph">Asia Pacific College.</a>
-              </p>
+            <a class="navbar-brand" href="#">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hobbies">Hobbies & Interest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#goals">Goals In Life/Dream</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <section class="info">
-            <table>
-                <tr>
-                    <th>IT Experience</th>
-                    <th>Hobbies & Interest</th>
-                    <th>Goals In Life/Dream</th>
-                </tr>
-                <tr>
-                    <td>Research and Development of "A Data-Driven Approach to Philippine Power Grid Efficiency"</td>
-                    <td>Golf</td>
-                    <td>Move or work to Switzerland</td>
-                </tr>
-                <tr>
-                    <td>Prototyping for "Rams Pawtner" using Figma</td>
-                    <td>Go to the Gym</td>
-                    <td>Retire my Parents</td>
-                </tr>
-                <tr>
-                    <td>FGD participant & critique for a Thesis called "Aninaw"</td>
-                    <td>Cook Food</td>
-                    <td>Buy my Dad's dream Hilux/Ranger</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Play Guitar</td>
-                    <td>Have a Stable Job</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Try different food</td>
-                    <td>Learn to Skydive</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Travel</td>
-                    <td>Travel to Japan and Korea</td>
-                </tr>
-            </table>
+    </nav>
+
+    <div class="container mt-5">
+        <section id="about" class="info-section">
+            <h2>About Me</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <p>Hello! I'm Gab, a Sophomore at Asia Pacific College</p>
+                </div>
+            </div>
         </section>
-        <section class="gallery">
-            <h4>Picture Gallery</h4>
-            <div class="gallery1">
-                <h5>KODAK FILMS</h5>
-                <div class="gallery-row">
-                    <img src="Images/kodak1.jpg" alt="Kodak 1">
-                    <img src="Images/kodak2.jpg" alt="Kodak 2">
-                    <img src="Images/kodak3.jpg" alt="Kodak 3">
+
+        <section id="experience" class="info-section">
+            <h2>Experience</h2>
+            <div class="card mb-3">
+                <div class="card-header">
+                    IT Experience <button class="btn btn-link" onclick="toggleCollapse(this)">Toggle</button>
+                </div>
+                <div class="collapsible-content card-body">
+                    <p><img src="path/to/canva-logo.png" alt="Canva Logo" class="logo"> Canva</p>
+                    <p><img src="path/to/microsoft-logo.png" alt="Microsoft Logo" class="logo"> Microsoft apps</p>
+                    <p><img src="path/to/python-logo.png" alt="Python Logo" class="logo"> Python</p>
+                    <p><img src="path/to/java-logo.png" alt="Java Logo" class="logo"> Java</p>
+                    <p><img src="path/to/html-logo.png" alt="HTML Logo" class="logo"> HTML</p>
+                    <p><img src="path/to/css-logo.png" alt="CSS Logo" class="logo"> CSS</p>
+                    <p><img src="path/to/javascript-logo.png" alt="JavaScript Logo" class="logo"> JavaScript</p>
+                    <p><img src="path/to/chatgpt-logo.png" alt="ChatGPT Logo" class="logo"> ChatGPT</p>
                 </div>
             </div>
-            <div class="gallery2">
-                <h5>ZAMBOANGA TRIP</h5>
-                <div class="gallery-row">
-                    <img src="Images/me1.jpg" alt="Trip 1">
-                    <img src="Images/me2.jpg" alt="Trip 2">
-                    <img src="Images/me3.jpg" alt="Trip 3">
+        </section>
+
+        <section id="hobbies" class="info-section">
+            <h2>Hobbies & Interest</h2>
+            <div class="card mb-3">
+                <div class="card-header">
+                    Hobbies & Interest <button class="btn btn-link" onclick="toggleCollapse(this)">Toggle</button>
+                </div>
+                <div class="collapsible-content card-body">
+                    <p>Cook Food</p>
+                    <p>Play Guitar</p>
+                    <p>Try different food</p>
+                    <p>Travel</p>
                 </div>
             </div>
-            <div class="gallery3">
-                <h5>ME AND MY GIRLFWENN</h5>
-                <div class="gallery-row">
-                    <img src="Images/gf1.jpg" alt="Couple 1">
-                    <img src="Images/gf2.jpg" alt="Couple 2">
-                    <img src="Images/gf3.jpg" alt="Couple 3">
+        </section>
+
+        <section id="goals" class="info-section">
+            <h2>Goals In Life/Dream</h2>
+            <div class="card mb-3">
+                <div class="card-header">
+                    Goals In Life/Dream <button class="btn btn-link" onclick="toggleCollapse(this)">Toggle</button>
+                </div>
+                <div class="collapsible-content card-body">
+                    <p>Buy my Dad's dream Hilux/Ranger</p>
+                    <p>Have a Stable Job</p>
+                    <p>Learn to Skydive</p>
+                    <p>Travel to Japan and Korea</p>
                 </div>
             </div>
-        </section>        
-    </main>
+        </section>
+
+        <section id="gallery" class="info-section">
+            <h2>Photo Gallery</h2>
+            <div id="app2">
+                <photo-gallery></photo-gallery>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="function.js"></script>
+    <script src="vue.js"></script>
 </body>
 </html>
