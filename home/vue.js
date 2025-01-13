@@ -1,3 +1,4 @@
+// Define the photo-gallery component globally
 Vue.component('photo-gallery', {
     template: `
         <div class="gallery">
@@ -26,6 +27,7 @@ Vue.component('photo-gallery', {
     }
 });
 
+// Initialize Vue
 new Vue({
     el: '#app',
 });

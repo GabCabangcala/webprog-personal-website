@@ -1,28 +1,30 @@
+/* General Styling */
 body {
     font-family: 'Roboto', sans-serif;
     color: #e0e0e0;
-    background-color: #000000;
+    background-color: #000000; /* Updated background color */
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
+/* Navbar Styling */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8); /* Updated background color */
     backdrop-filter: blur(10px);
     transition: background-color 0.3s ease;
 }
 
 .navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.95); /* Updated background color */
 }
 
 .navbar-brand {
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
-    color: #BC6FF1 !important;
+    color: #BC6FF1 !important; /* Updated color */
     font-size: 1.5rem;
-    text-shadow: 0 0 10px rgba(188, 111, 241, 0.5);
+    text-shadow: 0 0 10px rgba(188, 111, 241, 0.5); /* Updated shadow color */
 }
 
 .nav-link {
@@ -38,13 +40,13 @@ body {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #BC6FF1;
+    background-color: #BC6FF1; /* Updated color */
     transform: scaleX(0);
     transition: transform 0.3s;
 }
 
 .nav-link:hover {
-    color: #BC6FF1 !important;
+    color: #BC6FF1 !important; /* Updated color */
     transform: translateY(-2px);
 }
 
@@ -52,6 +54,7 @@ body {
     transform: scaleX(1);
 }
 
+/* Hero Section */
 .hero-section {
     background: url('Test4.png') no-repeat center center/cover;
     height: 100vh;
@@ -86,7 +89,7 @@ body {
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    text-shadow: 0 0 20px rgba(188, 111, 241, 0.8);
+    text-shadow: 0 0 20px rgba(188, 111, 241, 0.8); /* Updated shadow color */
     animation: glow 3s infinite alternate;
 }
 
@@ -100,10 +103,10 @@ body {
 
 @keyframes glow {
     0%, 100% {
-        text-shadow: 0 0 20px rgba(188, 111, 241, 0.8);
+        text-shadow: 0 0 20px rgba(188, 111, 241, 0.8); /* Updated shadow color */
     }
     50% {
-        text-shadow: 0 0 30px rgba(188, 111, 241, 1), 0 0 40px rgba(188, 111, 241, 0.5);
+        text-shadow: 0 0 30px rgba(188, 111, 241, 1), 0 0 40px rgba(188, 111, 241, 0.5); /* Updated shadow color */
     }
 }
 
@@ -114,16 +117,17 @@ body {
     }
 }
 
+/* Section Styling */
 .section {
     padding: 6rem 0;
-    background-color: #000000;
+    background-color: #000000; /* Updated background color */
 }
 
 .section-title {
     font-family: 'Orbitron', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #BC6FF1;
+    color: #BC6FF1; /* Updated color */
     text-align: center;
 }
 
@@ -134,6 +138,7 @@ body {
     text-align: center;
 }
 
+/* About Section */
 .about-text {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -142,19 +147,20 @@ body {
     margin: 0 auto;
 }
 
+/* Projects Section */
 .project-card {
-    background-color: rgba(82, 5, 123, 0.05);
+    background-color: rgba(82, 5, 123, 0.05); /* Updated background color */
     border-radius: 15px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
-    border: 1px solid rgba(188, 111, 241, 0.2);
+    border: 1px solid rgba(188, 111, 241, 0.2); /* Updated border color */
     position: relative;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(188, 111, 241, 0.2);
+    box-shadow: 0 10px 20px rgba(188, 111, 241, 0.2); /* Updated shadow color */
 }
 
 .card-body {
@@ -213,6 +219,7 @@ body {
     transform: translateX(-100%);
 }
 
+
 .card-image:before {
     content: '';
     position: absolute;
@@ -227,7 +234,7 @@ body {
 .card-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: #BC6FF1;
+    color: #BC6FF1; /* Updated color */
 }
 
 .card-title {
@@ -249,12 +256,14 @@ body {
     color: inherit;
 }
 
+/* Ensure text remains readable on hover */
 .project-card:hover .card-icon,
 .project-card:hover .card-title,
 .project-card:hover .card-description {
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 }
 
+/* Contact Section */
 .btn {
     font-size: 1rem;
     padding: 0.75rem 1.5rem;
@@ -263,23 +272,23 @@ body {
 }
 
 .btn-outline-primary {
-    border-color: #00ffcc;
-    color: #00ffcc;
+    border-color: #00ffcc; /* Original color */
+    color: #00ffcc; /* Original color */
 }
 
 .btn-outline-primary:hover {
-    background-color: #00ffcc;
-    color: #0a0a0a;
+    background-color: #00ffcc; /* Original color */
+    color: #0a0a0a; /* Original color */
 }
 
 .btn-outline-info {
-    border-color: #00a0ff;
-    color: #00a0ff;
+    border-color: #00a0ff; /* Original color */
+    color: #00a0ff; /* Original color */
 }
 
 .btn-outline-info:hover {
-    background-color: #00a0ff;
-    color: #0a0a0a;
+    background-color: #00a0ff; /* Original color */
+    color: #0a0a0a; /* Original color */
 }
 
 .btn-outline-light {
@@ -289,9 +298,10 @@ body {
 
 .btn-outline-light:hover {
     background-color: #e0e0e0;
-    color: #0a0a0a;
+    color: #0a0a0a; /* Original color */
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
     .navbar-brand {
         font-size: 1.2rem;
@@ -350,7 +360,7 @@ body {
 }
 
 .expertise-icons i {
-    color: #BC6FF1;
+    color: #BC6FF1; /* Updated color */
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -369,8 +379,8 @@ body {
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto;
-    border: 4px solid #BC6FF1;
-    box-shadow: 0 0 20px rgba(188, 111, 241, 0.5);
+    border: 4px solid #BC6FF1; /* Updated color */
+    box-shadow: 0 0 20px rgba(188, 111, 241, 0.5); /* Updated shadow color */
 }
 
 .profile-picture {
@@ -382,29 +392,31 @@ body {
 .profile-name {
     font-family: 'Orbitron', sans-serif;
     font-size: 1.5rem;
-    color: #BC6FF1;
+    color: #BC6FF1; /* Updated color */
     margin-top: 1rem;
 }
 
 .gallery-row {
-    column-count: 4;
-    column-gap: 1rem;
-    margin: 2rem;
+    column-count: 4; /* Number of columns */
+    column-gap: 1rem; /* Gap between columns */
+    margin: 2rem; /* Add margin around the gallery */
 }
 
 .gallery-row img {
     width: 100%;
-    margin-bottom: 1rem;
-    border-radius: 10px;
-    object-fit: cover;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1rem; /* Space between images */
+    border-radius: 10px; /* Optional: Add rounded corners for a polished look */
+    object-fit: cover; /* Ensures the image covers the space without distorting */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
 }
 
+/* Optional: Add hover effects for images */
 .gallery-row img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1); /* Scales image on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow on hover */
 }
 
+/* Hero Content */
 .hero-content {
     position: absolute;
     top: 50%;
@@ -412,7 +424,7 @@ body {
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
-    z-index: 10;
+    z-index: 10; /* Ensures content stays above the carousel */
 }
 
 .hero-title {
@@ -430,63 +442,186 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Overlay for readability */
 .hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 5;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+    z-index: 5; /* Overlay sits between carousel and text */
 }
 
+/* Carousel settings */
 .carousel-inner {
-    height: 100%;
+    height: 100%; /* Ensure carousel takes up full section height */
 }
 
 .carousel-item {
-    height: 100vh;
-    object-fit: cover;
+    height: 100vh; /* Set each carousel image to full height */
+    object-fit: cover; /* Ensures the images cover the area without distortion */
 }
 
 .carousel-control-prev, .carousel-control-next {
-    z-index: 10;
+    z-index: 10; /* Ensure carousel controls are above the overlay */
 }
 
 .section {
-    padding: 4rem 0;
+    padding: 4rem 0; /* Add padding to the section */
 }
 
 .section-title {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     font-family: 'Roboto', sans-serif;
-    color: #BC6FF1;
+    color: #BC6FF1; /* Updated color */
 }
 
 .expertise-icons {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 2rem; /* Add gap between items */
 }
 
 .experience-item {
-    flex: 1 1 200px;
+    flex: 1 1 200px; /* Flex items to be responsive */
     max-width: 200px;
     text-align: center;
 }
 
 .progress {
     height: 10px;
-    background-color: #52057B;
+    background-color: #230733; /* Updated background color */
     border-radius: 5px;
     overflow: hidden;
     margin-top: 0.5rem;
 }
 
 .progress-bar {
-    background-color: #892CDC;
+    background-color: #a290b3; /* Updated color */
     height: 100%;
     transition: width 0.3s ease;
+}
+
+/* Feedback Section Styling */
+.contact {
+    padding: 6rem 2rem;
+    background-color: #000000; /* Matches the overall background color */
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.contact .section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #BC6FF1; /* Updated to match overall theme */
+}
+
+.contact .section-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #b0b0b0;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(82, 5, 123, 0.1); /* Subtle background for form */
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid rgba(188, 111, 241, 0.2); /* Matches card styling */
+    box-shadow: 0 10px 20px rgba(188, 111, 241, 0.2);
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #BC6FF1; /* Matches the theme */
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #BC6FF1; /* Matches the color theme */
+    border-radius: 5px;
+    background-color: #1a1a1a; /* Subtle dark background for inputs */
+    color: #e0e0e0;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #BC6FF1;
+    outline: none;
+    box-shadow: 0 0 5px rgba(188, 111, 241, 0.5);
+}
+
+.contact-form button {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #BC6FF1; /* Matches the theme */
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e0e0e0; /* Light hover effect */
+    color: #0a0a0a;
+    transform: translateY(-3px);
+}
+
+.submitted-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(82, 5, 123, 0.1); /* Matches form styling */
+    border-radius: 15px;
+    border: 1px solid rgba(188, 111, 241, 0.2);
+    text-align: center;
+    display: none;
+}
+
+.submitted-container .thank-you-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    color: #BC6FF1;
+    margin-bottom: 1rem;
+}
+
+.submitted-container p {
+    font-size: 1.2rem;
+    color: #b0b0b0;
+    margin-bottom: 2rem;
+}
+
+.submitted-container .reset-btn {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #6c757d; /* Neutral button color */
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submitted-container .reset-btn:hover {
+    background-color: #5a6268;
+    transform: translateY(-3px);
 }
