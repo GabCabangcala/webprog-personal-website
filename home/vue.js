@@ -1,7 +1,7 @@
-// Define the photo-gallery component globally
 Vue.component('photo-gallery', {
     template: `
         <div class="gallery">
+            <h2 class="section-title">Photo Gallery</h2>
             <div class="gallery-row">
                 <div class="gallery-item" v-for="(image, index) in images" :key="index">
                     <img :src="image.src" :alt="image.alt" class="img-fluid" />
@@ -26,7 +26,6 @@ Vue.component('photo-gallery', {
     }
 });
 
-
 new Vue({
-    el: '#app2',
+    el: '#app',
 });
